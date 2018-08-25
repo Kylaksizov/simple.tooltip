@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple tooltip</title>
+    <link rel="stylesheet" href="../src/simple.tooltip.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../src/simple.tooltip.js"></script>
+</head>
+<body>
+
+<style>
+    table{
+        width: 100%;
+    }
+    table td{
+        padding: 10px;
+        text-align: center;
+        border: 1px #ccc solid;
+    }
+</style>
+<script>
+    $(function(){
+        $('[title]').simpleTooltip();
+    })
+</script>
+
+<h1>Simple Tooltip jquery plugin</h1>
+
+<table>
+    <tr>
+        <td title="Example left tooltip">Example tooltip</td>
+        <td title="Example left tooltip">Example tooltip</td>
+        <td title="Example left tooltip">Example tooltip</td>
+    </tr>
+    <tr>
+        <td title="Example left and right tooltip">Example tooltip</td>
+        <td title="Example left and right tooltip">Example tooltip</td>
+        <td title="Example left and right tooltip">Example tooltip</td>
+    </tr>
+    <tr>
+        <td title="Example right tooltip">Example tooltip</td>
+        <td title="Example right tooltip">Example tooltip</td>
+        <td title="Example right tooltip">Example tooltip</td>
+    </tr>
+</table>
+
+</body>
+</html>
